@@ -14,4 +14,8 @@
     	<name>org.zkoss.theme.preferred</name>
     	<value>sapphire</value> <!-- or silvertail, atlantic, deepsea, gardensalad etc. -->
 	</library-property>
+	
+	<language-config>
+		<addon-uri>/WEB-INF/classes/metainfo/zk/lang-addon.xml</addon-uri>
+	</language-config>
 </zk>
