@@ -11,7 +11,7 @@
   <url>http://maven.apache.org</url>
   
   <properties>
-  	<zk.version>10.1.0-jakarta</zk.version>
+  	<zk.version>10.2.0.FL.202504101008-Eval</zk.version>
   	<zk.theme.version>10.1.0</zk.theme.version>
   	<log4j.version>2.23.1</log4j.version>
   </properties>
@@ -20,6 +20,11 @@
     <repository>
 	  <id>zk repository</id>
       <url>http://mavensync.zkoss.org/maven2</url>
+      
+	</repository>
+	<repository>
+	  <id>zk eval repository</id>
+      <url>https://mavensync.zkoss.org/eval</url>
 	</repository>
   </repositories>
   
@@ -35,6 +40,7 @@
     	<artifactId>commons-lang3</artifactId>
     	<version>3.17.0</version>
 	</dependency>
+    
     <dependency>
 			<groupId>org.zkoss.zk</groupId>
 			<artifactId>zkplus</artifactId>
@@ -210,17 +216,17 @@
 
             <configuration>
 				<container>
-     				<containerId>tomcat10x</containerId>
+     				<containerId>tomcat9x</containerId>
      				<type>embedded</type>
      				<artifactInstaller>
             			<groupId>org.apache.tomcat</groupId>
               			<artifactId>tomcat</artifactId>
-              			<version>10.1.28</version>
+              			<version>9.0.90</version>
      				</artifactInstaller>
 				</container>
 				<configuration>
     				<type>standalone</type>
-    				<home>c:/tomcat/tomcat10x</home>
+    				<home>c:/tomcat/tomcat9x</home>
      				<properties>
      					<cargo.servlet.port>8082</cargo.servlet.port>
            				<cargo.logging>high</cargo.logging>
